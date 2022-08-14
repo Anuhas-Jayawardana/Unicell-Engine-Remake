@@ -63,12 +63,16 @@ namespace Unicell {
     {
         sprite.Bind();
         sprite.shader->enable();
-        sprite.shader->setInt("tex",0);
-        sprite.texture->Bind();
+        if(sprite.hasTexture)
+            sprite.texture->Bind();
+        sprite.shader->setMatrix4("u_projection",projection);
+        sprite.shader->setMatrix4("u_model",sprite.getModelView());
         glDrawArrays(GL_TRIANGLES,0,sprite.getVertexCount());
-        sprite.texture->Unbind();
+        if(sprite.hasTexture)
+            sprite.texture->Unbind();
         sprite.Unbind();
     }
+        
 
     void Window::Draw(Rectangle& rect)
     {

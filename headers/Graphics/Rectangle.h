@@ -26,6 +26,10 @@ namespace Unicell
         void Rotate(float amount,glm::vec3 dir);
         void Scale(float x,float y);
 
+        bool CheckCollision(Rectangle& two);
+
+        void setPosition(float x,float y);
+
         int getVertexCount();
 
         glm::mat4 getModelView();

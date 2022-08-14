@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Unicell.dir/src/AudioManager.cpp.obj"
+  "CMakeFiles/Unicell.dir/src/AudioManager.cpp.obj.d"
   "CMakeFiles/Unicell.dir/src/Rectangle.cpp.obj"
   "CMakeFiles/Unicell.dir/src/Rectangle.cpp.obj.d"
   "CMakeFiles/Unicell.dir/src/Shader.cpp.obj"
@@ -15,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Unicell.dir/src/Window.cpp.obj.d"
   "CMakeFiles/Unicell.dir/src/main.cpp.obj"
   "CMakeFiles/Unicell.dir/src/main.cpp.obj.d"
+  "CMakeFiles/Unicell.dir/src/miniaudio.cpp.obj"
+  "CMakeFiles/Unicell.dir/src/miniaudio.cpp.obj.d"
   "CMakeFiles/Unicell.dir/src/stb_image.cpp.obj"
   "CMakeFiles/Unicell.dir/src/stb_image.cpp.obj.d"
   "Unicell.exe"

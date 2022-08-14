@@ -3,4 +3,7 @@
 #include "Graphics/Rectangle.h"
 #include "Graphics/Texture.h"
 #include "Graphics/Sprite.h"
+#include "Display/VertexArray.h"
+#include "Display/VertexBuffer.h"
+#include "Audio/AudioManager.h"
 #include <iostream>

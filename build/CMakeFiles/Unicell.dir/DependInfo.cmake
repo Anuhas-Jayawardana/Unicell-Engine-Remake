@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/S/Music/Open Source/Unicell-Engine/src/AudioManager.cpp" "CMakeFiles/Unicell.dir/src/AudioManager.cpp.obj" "gcc" "CMakeFiles/Unicell.dir/src/AudioManager.cpp.obj.d"
   "C:/Users/S/Music/Open Source/Unicell-Engine/src/Rectangle.cpp" "CMakeFiles/Unicell.dir/src/Rectangle.cpp.obj" "gcc" "CMakeFiles/Unicell.dir/src/Rectangle.cpp.obj.d"
   "C:/Users/S/Music/Open Source/Unicell-Engine/src/Shader.cpp" "CMakeFiles/Unicell.dir/src/Shader.cpp.obj" "gcc" "CMakeFiles/Unicell.dir/src/Shader.cpp.obj.d"
   "C:/Users/S/Music/Open Source/Unicell-Engine/src/Sprite.cpp" "CMakeFiles/Unicell.dir/src/Sprite.cpp.obj" "gcc" "CMakeFiles/Unicell.dir/src/Sprite.cpp.obj.d"
@@ -16,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/S/Music/Open Source/Unicell-Engine/src/VertexBuffer.cpp" "CMakeFiles/Unicell.dir/src/VertexBuffer.cpp.obj" "gcc" "CMakeFiles/Unicell.dir/src/VertexBuffer.cpp.obj.d"
   "C:/Users/S/Music/Open Source/Unicell-Engine/src/Window.cpp" "CMakeFiles/Unicell.dir/src/Window.cpp.obj" "gcc" "CMakeFiles/Unicell.dir/src/Window.cpp.obj.d"
   "C:/Users/S/Music/Open Source/Unicell-Engine/src/main.cpp" "CMakeFiles/Unicell.dir/src/main.cpp.obj" "gcc" "CMakeFiles/Unicell.dir/src/main.cpp.obj.d"
+  "C:/Users/S/Music/Open Source/Unicell-Engine/src/miniaudio.cpp" "CMakeFiles/Unicell.dir/src/miniaudio.cpp.obj" "gcc" "CMakeFiles/Unicell.dir/src/miniaudio.cpp.obj.d"
   "C:/Users/S/Music/Open Source/Unicell-Engine/src/stb_image.cpp" "CMakeFiles/Unicell.dir/src/stb_image.cpp.obj" "gcc" "CMakeFiles/Unicell.dir/src/stb_image.cpp.obj.d"
   )
 

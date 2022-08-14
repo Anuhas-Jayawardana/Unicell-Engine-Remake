@@ -1,19 +1,31 @@
 #include "Unicell.h"
-#include "Display/VertexArray.h"
-#include "Display/VertexBuffer.h"
 
 using namespace Unicell;
 
 int main()
 {
     Window window(800,600,"Window");
-    Sprite sprite(0.0f,0.0f,100.0f,100.0f);
 
-    sprite.setTexture("res/otherpfp.png");
+    Sprite player(0.0f,0.0f,100.0f,100.0f);
+    Sprite enemy(200.0f,200.0f,100.0f,100.0f);
+
+    player.setTexture("res/player.png");
+    enemy.setTexture("res/player.png");
+
+    bool colliding = false;
 
    while(!window.closed()){
         window.Clear();
-        window.Draw(sprite);
+
+        colliding = player.CheckCollision(enemy);
+
+        player.setPosition(window.getMousePosition().x,window.getMousePosition().y);
+
+        window.Draw(player);
+        
+        if(!colliding)
+            window.Draw(enemy);
+
         window.Update();
     }
     window.Quit();

@@ -372,4 +372,9 @@ CMakeFiles/Unicell.dir/src/main.cpp.obj: \
  C:/Users/S/Documents/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/12.1.0/include/c++/pstl/execution_defs.h \
  C:/Users/S/Music/OPENSO~1/UNICEL~1/headers/Graphics/Sprite.h \
  C:/Users/S/Music/OPENSO~1/UNICEL~1/headers/Graphics/Texture.h \
- C:/Users/S/Music/OPENSO~1/UNICEL~1/include/GLFW/glfw3.h
+ C:/Users/S/Music/OPENSO~1/UNICEL~1/include/GLFW/glfw3.h \
+ C:/Users/S/Music/OPENSO~1/UNICEL~1/headers/Audio/AudioManager.h \
+ C:/Users/S/Music/OPENSO~1/UNICEL~1/include/miniaudio/miniaudio.h \
+ C:/Users/S/Documents/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/12.1.0/include/stdarg.h \
+ C:/Users/S/Documents/mingw/mingw64/x86_64-w64-mingw32/include/stdarg.h \
+ C:/Users/S/Documents/mingw/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h

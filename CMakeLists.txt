@@ -13,6 +13,8 @@ set(
     src/Texture.cpp
     src/Sprite.cpp
     src/stb_image.cpp
+    src/miniaudio.cpp
+    src/AudioManager.cpp
 )
 
 link_directories(${PROJECT_NAME} ${PROJECT_SOURCE_DIR}/lib)

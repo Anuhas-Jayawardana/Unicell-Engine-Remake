@@ -128,6 +128,30 @@ Unicell/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Unicell.dir\build.make CMakeFiles/Unicell.dir/build
 .PHONY : Unicell/fast
 
+src/AudioManager.obj: src/AudioManager.cpp.obj
+.PHONY : src/AudioManager.obj
+
+# target to build an object file
+src/AudioManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Unicell.dir\build.make CMakeFiles/Unicell.dir/src/AudioManager.cpp.obj
+.PHONY : src/AudioManager.cpp.obj
+
+src/AudioManager.i: src/AudioManager.cpp.i
+.PHONY : src/AudioManager.i
+
+# target to preprocess a source file
+src/AudioManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Unicell.dir\build.make CMakeFiles/Unicell.dir/src/AudioManager.cpp.i
+.PHONY : src/AudioManager.cpp.i
+
+src/AudioManager.s: src/AudioManager.cpp.s
+.PHONY : src/AudioManager.s
+
+# target to generate assembly for a file
+src/AudioManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Unicell.dir\build.make CMakeFiles/Unicell.dir/src/AudioManager.cpp.s
+.PHONY : src/AudioManager.cpp.s
+
 src/Rectangle.obj: src/Rectangle.cpp.obj
 .PHONY : src/Rectangle.obj
 
@@ -320,6 +344,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Unicell.dir\build.make CMakeFiles/Unicell.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/miniaudio.obj: src/miniaudio.cpp.obj
+.PHONY : src/miniaudio.obj
+
+# target to build an object file
+src/miniaudio.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Unicell.dir\build.make CMakeFiles/Unicell.dir/src/miniaudio.cpp.obj
+.PHONY : src/miniaudio.cpp.obj
+
+src/miniaudio.i: src/miniaudio.cpp.i
+.PHONY : src/miniaudio.i
+
+# target to preprocess a source file
+src/miniaudio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Unicell.dir\build.make CMakeFiles/Unicell.dir/src/miniaudio.cpp.i
+.PHONY : src/miniaudio.cpp.i
+
+src/miniaudio.s: src/miniaudio.cpp.s
+.PHONY : src/miniaudio.s
+
+# target to generate assembly for a file
+src/miniaudio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Unicell.dir\build.make CMakeFiles/Unicell.dir/src/miniaudio.cpp.s
+.PHONY : src/miniaudio.cpp.s
+
 src/stb_image.obj: src/stb_image.cpp.obj
 .PHONY : src/stb_image.obj
 
@@ -353,6 +401,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Unicell
+	@echo ... src/AudioManager.obj
+	@echo ... src/AudioManager.i
+	@echo ... src/AudioManager.s
 	@echo ... src/Rectangle.obj
 	@echo ... src/Rectangle.i
 	@echo ... src/Rectangle.s
@@ -377,6 +428,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/miniaudio.obj
+	@echo ... src/miniaudio.i
+	@echo ... src/miniaudio.s
 	@echo ... src/stb_image.obj
 	@echo ... src/stb_image.i
 	@echo ... src/stb_image.s

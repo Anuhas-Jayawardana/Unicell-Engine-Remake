@@ -5,6 +5,12 @@ namespace Unicell
 
     Rectangle::Rectangle(float x,float y,float width,float height)
     {
+        position.x = x;
+        position.y = y;
+        
+        size.x = width;
+        size.y = height;
+        
         float positions[] = {
             x,y + height,0.0f,
             x + width,y + height,0.0f,
@@ -59,8 +65,15 @@ namespace Unicell
         return count;
     }
 
+    void Rectangle::setPosition(float x,float y)
+    {
+        Move(x - position.x,y - position.y);
+    }
+
     void Rectangle::Move(float x,float y)
     {
+        position.x += x;
+        position.y += y;
         model_view = glm::translate(model_view,glm::vec3(x,y,0.0f));
     }
 
@@ -84,6 +97,15 @@ namespace Unicell
     {
         vbo->Unbind();
         vao->Unbind();
+    }
+
+    bool Rectangle::CheckCollision(Rectangle&two)
+    {
+        bool collisionX = getPosition().x + getSize().x >= two.getPosition().x &&
+            two.getPosition().x + two.getSize().x >= getPosition().x;
+        bool collisionY = getPosition().y + getSize().y >= two.getPosition().y &&
+            two.getPosition().y + two.getSize().y >= getPosition().y;
+        return collisionX && collisionY;
     }
 
 }

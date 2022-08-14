@@ -9,7 +9,6 @@ namespace Unicell
         stbi_set_flip_vertically_on_load(1);
         
         glGenTextures(1,&ID);
-        glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D,ID);
 
         glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_NEAREST);
@@ -17,9 +16,11 @@ namespace Unicell
 
         unsigned char* bytes = stbi_load(path,&width,&height,&bpp,0);
 
-        std::cout<<bpp<<std::endl;
+        if(bpp == 3)
+            glTexImage2D(GL_TEXTURE_2D,0,GL_RGBA,width,height,0,GL_RGB,GL_UNSIGNED_BYTE,bytes);
+        if(bpp == 4)
+            glTexImage2D(GL_TEXTURE_2D,0,GL_RGBA,width,height,0,GL_RGBA,GL_UNSIGNED_BYTE,bytes);
 
-        glTexImage2D(GL_TEXTURE_2D,0,GL_RGBA,width,height,0,GL_RGBA,GL_UNSIGNED_BYTE,bytes);
         Unbind();
 
         stbi_image_free(bytes);

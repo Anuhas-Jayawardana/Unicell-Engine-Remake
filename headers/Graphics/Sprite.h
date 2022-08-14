@@ -22,13 +22,17 @@ namespace Unicell
         void Bind();
         void Unbind();
 
+        bool CheckCollision(Sprite& two);
+
         std::shared_ptr<Shader> shader;
         std::shared_ptr<Texture> texture;
+        bool hasTexture = false; // just to avoid the program from crashing when it tries to bind an empty texture :)
 
         void Move(float x,float y);
         void Rotate(float amount,glm::vec3 dir);
         void Scale(float x,float y);
 
+        void setPosition(float x,float y);
         void setTexture(const char* path);
 
         int getVertexCount();

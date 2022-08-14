@@ -6,8 +6,8 @@ An OpenGL game engine developed by a 14 years old :)
   GnuMake (also add to path)
   
  on the root directory, type in these commands
-  cmake -G "MinGW Makefiles" -S . -B build
-  cd build
-  make
-  Unicell.exe (./Unicell.exe on mac or linux)
+  - cmake -G "MinGW Makefiles" -S . -B build
+  - cd build
+  - make
+  - Unicell.exe (./Unicell.exe on mac or linux)
   

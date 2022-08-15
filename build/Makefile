@@ -152,6 +152,30 @@ src/AudioManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Unicell.dir\build.make CMakeFiles/Unicell.dir/src/AudioManager.cpp.s
 .PHONY : src/AudioManager.cpp.s
 
+src/Camera.obj: src/Camera.cpp.obj
+.PHONY : src/Camera.obj
+
+# target to build an object file
+src/Camera.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Unicell.dir\build.make CMakeFiles/Unicell.dir/src/Camera.cpp.obj
+.PHONY : src/Camera.cpp.obj
+
+src/Camera.i: src/Camera.cpp.i
+.PHONY : src/Camera.i
+
+# target to preprocess a source file
+src/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Unicell.dir\build.make CMakeFiles/Unicell.dir/src/Camera.cpp.i
+.PHONY : src/Camera.cpp.i
+
+src/Camera.s: src/Camera.cpp.s
+.PHONY : src/Camera.s
+
+# target to generate assembly for a file
+src/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Unicell.dir\build.make CMakeFiles/Unicell.dir/src/Camera.cpp.s
+.PHONY : src/Camera.cpp.s
+
 src/Rectangle.obj: src/Rectangle.cpp.obj
 .PHONY : src/Rectangle.obj
 
@@ -223,6 +247,30 @@ src/Sprite.s: src/Sprite.cpp.s
 src/Sprite.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Unicell.dir\build.make CMakeFiles/Unicell.dir/src/Sprite.cpp.s
 .PHONY : src/Sprite.cpp.s
+
+src/SpriteGroup.obj: src/SpriteGroup.cpp.obj
+.PHONY : src/SpriteGroup.obj
+
+# target to build an object file
+src/SpriteGroup.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Unicell.dir\build.make CMakeFiles/Unicell.dir/src/SpriteGroup.cpp.obj
+.PHONY : src/SpriteGroup.cpp.obj
+
+src/SpriteGroup.i: src/SpriteGroup.cpp.i
+.PHONY : src/SpriteGroup.i
+
+# target to preprocess a source file
+src/SpriteGroup.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Unicell.dir\build.make CMakeFiles/Unicell.dir/src/SpriteGroup.cpp.i
+.PHONY : src/SpriteGroup.cpp.i
+
+src/SpriteGroup.s: src/SpriteGroup.cpp.s
+.PHONY : src/SpriteGroup.s
+
+# target to generate assembly for a file
+src/SpriteGroup.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Unicell.dir\build.make CMakeFiles/Unicell.dir/src/SpriteGroup.cpp.s
+.PHONY : src/SpriteGroup.cpp.s
 
 src/Texture.obj: src/Texture.cpp.obj
 .PHONY : src/Texture.obj
@@ -404,6 +452,9 @@ help:
 	@echo ... src/AudioManager.obj
 	@echo ... src/AudioManager.i
 	@echo ... src/AudioManager.s
+	@echo ... src/Camera.obj
+	@echo ... src/Camera.i
+	@echo ... src/Camera.s
 	@echo ... src/Rectangle.obj
 	@echo ... src/Rectangle.i
 	@echo ... src/Rectangle.s
@@ -413,6 +464,9 @@ help:
 	@echo ... src/Sprite.obj
 	@echo ... src/Sprite.i
 	@echo ... src/Sprite.s
+	@echo ... src/SpriteGroup.obj
+	@echo ... src/SpriteGroup.i
+	@echo ... src/SpriteGroup.s
 	@echo ... src/Texture.obj
 	@echo ... src/Texture.i
 	@echo ... src/Texture.s

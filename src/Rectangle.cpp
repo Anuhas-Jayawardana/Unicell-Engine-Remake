@@ -33,7 +33,8 @@ namespace Unicell
         const char* fragment = 
         "#version 330 core\n"
         "out vec4 color;\n"
-        "void main() {color = vec4(1.0,0.0,0.0,1.0);}";
+        "uniform vec4 fill = vec4(1.0,1.0,1.0,1.0);\n"
+        "void main() {color = fill;}";
 
         shader = std::make_shared<Shader>(vertex,fragment);
         vao = std::make_shared<VertexArray>();
@@ -48,6 +49,11 @@ namespace Unicell
     glm::mat4 Rectangle::getModelView()
     {
         return model_view;
+    }
+
+    glm::vec4 Rectangle::getFillColor()
+    {
+        return fill;
     }
 
     glm::vec2 Rectangle::getPosition()
@@ -65,6 +71,13 @@ namespace Unicell
         return count;
     }
 
+    void Rectangle::setFillColor(glm::vec3 color)
+    {
+        fill.x = color.x;
+        fill.y = color.y;
+        fill.z = color.z;
+    }
+
     void Rectangle::setPosition(float x,float y)
     {
         Move(x - position.x,y - position.y);
@@ -77,9 +90,17 @@ namespace Unicell
         model_view = glm::translate(model_view,glm::vec3(x,y,0.0f));
     }
 
+    void Rectangle::Move(glm::vec3 dir)
+    {
+        position.x += dir.x;
+        position.y += dir.y;
+        model_view = glm::translate(model_view,dir);
+    }
+
     void Rectangle::Rotate(float amount,glm::vec3 dir)
     {
         model_view = glm::rotate(model_view,glm::radians(amount),dir);
+        Move(amount,-(amount));
     }
 
     void Rectangle::Scale(float x,float y)
@@ -98,6 +119,8 @@ namespace Unicell
         vbo->Unbind();
         vao->Unbind();
     }
+
+    
 
     bool Rectangle::CheckCollision(Rectangle&two)
     {

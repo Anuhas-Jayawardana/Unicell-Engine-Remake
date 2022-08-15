@@ -92,6 +92,13 @@ namespace Unicell
         texture = std::make_shared<Texture>(path);
     }
 
+    void Sprite::Move(glm::vec3 dir)
+    {
+        position.x += dir.x;
+        position.y += dir.y;
+        model_view = glm::translate(model_view,dir);
+    }
+
     void Sprite::Move(float x,float y)
     {
         position.x += x;
@@ -99,9 +106,11 @@ namespace Unicell
         model_view = glm::translate(model_view,glm::vec3(x,y,0.0f));
     }
 
+
     void Sprite::Rotate(float amount,glm::vec3 dir)
     {
         model_view = glm::rotate(model_view,glm::radians(amount),dir);
+        Move(amount,-(amount));
     }
 
     void Sprite::Scale(float x,float y)

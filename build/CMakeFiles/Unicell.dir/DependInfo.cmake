@@ -9,9 +9,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/S/Music/Open Source/Unicell-Engine/src/AudioManager.cpp" "CMakeFiles/Unicell.dir/src/AudioManager.cpp.obj" "gcc" "CMakeFiles/Unicell.dir/src/AudioManager.cpp.obj.d"
+  "C:/Users/S/Music/Open Source/Unicell-Engine/src/Camera.cpp" "CMakeFiles/Unicell.dir/src/Camera.cpp.obj" "gcc" "CMakeFiles/Unicell.dir/src/Camera.cpp.obj.d"
   "C:/Users/S/Music/Open Source/Unicell-Engine/src/Rectangle.cpp" "CMakeFiles/Unicell.dir/src/Rectangle.cpp.obj" "gcc" "CMakeFiles/Unicell.dir/src/Rectangle.cpp.obj.d"
   "C:/Users/S/Music/Open Source/Unicell-Engine/src/Shader.cpp" "CMakeFiles/Unicell.dir/src/Shader.cpp.obj" "gcc" "CMakeFiles/Unicell.dir/src/Shader.cpp.obj.d"
   "C:/Users/S/Music/Open Source/Unicell-Engine/src/Sprite.cpp" "CMakeFiles/Unicell.dir/src/Sprite.cpp.obj" "gcc" "CMakeFiles/Unicell.dir/src/Sprite.cpp.obj.d"
+  "C:/Users/S/Music/Open Source/Unicell-Engine/src/SpriteGroup.cpp" "CMakeFiles/Unicell.dir/src/SpriteGroup.cpp.obj" "gcc" "CMakeFiles/Unicell.dir/src/SpriteGroup.cpp.obj.d"
   "C:/Users/S/Music/Open Source/Unicell-Engine/src/Texture.cpp" "CMakeFiles/Unicell.dir/src/Texture.cpp.obj" "gcc" "CMakeFiles/Unicell.dir/src/Texture.cpp.obj.d"
   "C:/Users/S/Music/Open Source/Unicell-Engine/src/VertexArray.cpp" "CMakeFiles/Unicell.dir/src/VertexArray.cpp.obj" "gcc" "CMakeFiles/Unicell.dir/src/VertexArray.cpp.obj.d"
   "C:/Users/S/Music/Open Source/Unicell-Engine/src/VertexBuffer.cpp" "CMakeFiles/Unicell.dir/src/VertexBuffer.cpp.obj" "gcc" "CMakeFiles/Unicell.dir/src/VertexBuffer.cpp.obj.d"

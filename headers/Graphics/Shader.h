@@ -17,9 +17,12 @@ namespace Unicell
         ~Shader();
 
         int getUniformLocation(const char* name);
+
         void setMatrix4(const char* name,glm::mat4 value);
         void setInt(const char* name,int value);
         
+        void setVector4(const char* name,glm::vec4 value);
+
         void enable();
         void disable();
     private:

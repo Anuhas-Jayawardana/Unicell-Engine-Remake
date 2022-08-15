@@ -1,34 +1,29 @@
 #include "Unicell.h"
 
-using namespace Unicell;
+/*
+Unicell Engine - Apache 2.0 License (github open-source project)
+    - textures
+    - rectangles
+    - sprite groups
+    - window handling
+    - shaders
+    - audio support
+    - image loading
+*/
 
 int main()
 {
-    Window window(800,600,"Window");
+    Unicell::Window window(800,600,"Window");
+    Unicell::Sprite spr(350.f,250.f,100.0f,100.0f);
+    spr.setTexture("res/player.png");
 
-    Sprite player(0.0f,0.0f,100.0f,100.0f);
-    Sprite enemy(200.0f,200.0f,100.0f,100.0f);
-
-    player.setTexture("res/player.png");
-    enemy.setTexture("res/player.png");
-
-    bool colliding = false;
-
-   while(!window.closed()){
+    while(!window.closed())
+    {
+        // have a look around the engine, this can go much more than you think :)
         window.Clear();
-
-        colliding = player.CheckCollision(enemy);
-
-        player.setPosition(window.getMousePosition().x,window.getMousePosition().y);
-
-        window.Draw(player);
-        
-        if(!colliding)
-            window.Draw(enemy);
-
+        window.Draw(spr);
         window.Update();
     }
-    window.Quit();
 
-    return 0;
+    window.Quit();
 }

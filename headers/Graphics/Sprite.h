@@ -24,6 +24,8 @@ namespace Unicell
 
         bool CheckCollision(Sprite& two);
 
+        void Move(glm::vec3 dir);
+
         std::shared_ptr<Shader> shader;
         std::shared_ptr<Texture> texture;
         bool hasTexture = false; // just to avoid the program from crashing when it tries to bind an empty texture :)

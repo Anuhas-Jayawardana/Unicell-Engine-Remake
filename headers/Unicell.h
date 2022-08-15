@@ -6,4 +6,5 @@
 #include "Display/VertexArray.h"
 #include "Display/VertexBuffer.h"
 #include "Audio/AudioManager.h"
+#include "Graphics/SpriteGroup.h"
 #include <iostream>

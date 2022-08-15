@@ -24,6 +24,11 @@ namespace Unicell
         return glGetUniformLocation(ID,name);
     }
 
+    void Shader::setVector4(const char* name,glm::vec4 value)
+    {
+        glUniform4f(getUniformLocation(name),value.x,value.y,value.z,value.w);
+    }
+
     void Shader::setInt(const char* name,int value)
     {
         glUniform1i(getUniformLocation(name),value);

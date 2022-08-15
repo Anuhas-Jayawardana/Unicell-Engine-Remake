@@ -15,6 +15,8 @@ set(
     src/stb_image.cpp
     src/miniaudio.cpp
     src/AudioManager.cpp
+    src/Camera.cpp
+    src/SpriteGroup.cpp
 )
 
 link_directories(${PROJECT_NAME} ${PROJECT_SOURCE_DIR}/lib)

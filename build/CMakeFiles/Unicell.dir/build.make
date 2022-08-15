@@ -233,6 +233,36 @@ CMakeFiles/Unicell.dir/src/AudioManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Unicell.dir/src/AudioManager.cpp.s"
 	C:\Users\S\Documents\mingw\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\S\Music\Open Source\Unicell-Engine\src\AudioManager.cpp" -o CMakeFiles\Unicell.dir\src\AudioManager.cpp.s
 
+CMakeFiles/Unicell.dir/src/Camera.cpp.obj: CMakeFiles/Unicell.dir/flags.make
+CMakeFiles/Unicell.dir/src/Camera.cpp.obj: CMakeFiles/Unicell.dir/includes_CXX.rsp
+CMakeFiles/Unicell.dir/src/Camera.cpp.obj: C:/Users/S/Music/Open\ Source/Unicell-Engine/src/Camera.cpp
+CMakeFiles/Unicell.dir/src/Camera.cpp.obj: CMakeFiles/Unicell.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\S\Music\Open Source\Unicell-Engine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Unicell.dir/src/Camera.cpp.obj"
+	C:\Users\S\Documents\mingw\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Unicell.dir/src/Camera.cpp.obj -MF CMakeFiles\Unicell.dir\src\Camera.cpp.obj.d -o CMakeFiles\Unicell.dir\src\Camera.cpp.obj -c "C:\Users\S\Music\Open Source\Unicell-Engine\src\Camera.cpp"
+
+CMakeFiles/Unicell.dir/src/Camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Unicell.dir/src/Camera.cpp.i"
+	C:\Users\S\Documents\mingw\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\S\Music\Open Source\Unicell-Engine\src\Camera.cpp" > CMakeFiles\Unicell.dir\src\Camera.cpp.i
+
+CMakeFiles/Unicell.dir/src/Camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Unicell.dir/src/Camera.cpp.s"
+	C:\Users\S\Documents\mingw\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\S\Music\Open Source\Unicell-Engine\src\Camera.cpp" -o CMakeFiles\Unicell.dir\src\Camera.cpp.s
+
+CMakeFiles/Unicell.dir/src/SpriteGroup.cpp.obj: CMakeFiles/Unicell.dir/flags.make
+CMakeFiles/Unicell.dir/src/SpriteGroup.cpp.obj: CMakeFiles/Unicell.dir/includes_CXX.rsp
+CMakeFiles/Unicell.dir/src/SpriteGroup.cpp.obj: C:/Users/S/Music/Open\ Source/Unicell-Engine/src/SpriteGroup.cpp
+CMakeFiles/Unicell.dir/src/SpriteGroup.cpp.obj: CMakeFiles/Unicell.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\S\Music\Open Source\Unicell-Engine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Unicell.dir/src/SpriteGroup.cpp.obj"
+	C:\Users\S\Documents\mingw\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Unicell.dir/src/SpriteGroup.cpp.obj -MF CMakeFiles\Unicell.dir\src\SpriteGroup.cpp.obj.d -o CMakeFiles\Unicell.dir\src\SpriteGroup.cpp.obj -c "C:\Users\S\Music\Open Source\Unicell-Engine\src\SpriteGroup.cpp"
+
+CMakeFiles/Unicell.dir/src/SpriteGroup.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Unicell.dir/src/SpriteGroup.cpp.i"
+	C:\Users\S\Documents\mingw\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\S\Music\Open Source\Unicell-Engine\src\SpriteGroup.cpp" > CMakeFiles\Unicell.dir\src\SpriteGroup.cpp.i
+
+CMakeFiles/Unicell.dir/src/SpriteGroup.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Unicell.dir/src/SpriteGroup.cpp.s"
+	C:\Users\S\Documents\mingw\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\S\Music\Open Source\Unicell-Engine\src\SpriteGroup.cpp" -o CMakeFiles\Unicell.dir\src\SpriteGroup.cpp.s
+
 # Object files for target Unicell
 Unicell_OBJECTS = \
 "CMakeFiles/Unicell.dir/src/main.cpp.obj" \
@@ -245,7 +275,9 @@ Unicell_OBJECTS = \
 "CMakeFiles/Unicell.dir/src/Sprite.cpp.obj" \
 "CMakeFiles/Unicell.dir/src/stb_image.cpp.obj" \
 "CMakeFiles/Unicell.dir/src/miniaudio.cpp.obj" \
-"CMakeFiles/Unicell.dir/src/AudioManager.cpp.obj"
+"CMakeFiles/Unicell.dir/src/AudioManager.cpp.obj" \
+"CMakeFiles/Unicell.dir/src/Camera.cpp.obj" \
+"CMakeFiles/Unicell.dir/src/SpriteGroup.cpp.obj"
 
 # External object files for target Unicell
 Unicell_EXTERNAL_OBJECTS =
@@ -261,11 +293,13 @@ Unicell.exe: CMakeFiles/Unicell.dir/src/Sprite.cpp.obj
 Unicell.exe: CMakeFiles/Unicell.dir/src/stb_image.cpp.obj
 Unicell.exe: CMakeFiles/Unicell.dir/src/miniaudio.cpp.obj
 Unicell.exe: CMakeFiles/Unicell.dir/src/AudioManager.cpp.obj
+Unicell.exe: CMakeFiles/Unicell.dir/src/Camera.cpp.obj
+Unicell.exe: CMakeFiles/Unicell.dir/src/SpriteGroup.cpp.obj
 Unicell.exe: CMakeFiles/Unicell.dir/build.make
 Unicell.exe: CMakeFiles/Unicell.dir/linklibs.rsp
 Unicell.exe: CMakeFiles/Unicell.dir/objects1.rsp
 Unicell.exe: CMakeFiles/Unicell.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\S\Music\Open Source\Unicell-Engine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Unicell.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\S\Music\Open Source\Unicell-Engine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable Unicell.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Unicell.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

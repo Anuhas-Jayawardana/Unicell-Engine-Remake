@@ -13,6 +13,7 @@ namespace Unicell {
         glfwInit();
         
         projection = glm::ortho(0.0f,(float)width,(float)height,0.0f,-1.0f,1.0f);
+        camera = std::make_shared<Camera>();
 
         window = glfwCreateWindow(width,height,title,0,0);
 
@@ -59,6 +60,15 @@ namespace Unicell {
         glClear(GL_COLOR_BUFFER_BIT);
     }
 
+    void Window::Draw(SpriteGroup& group)
+    {
+        for (int i = 0; i < group.sprites.size(); i++)
+        {
+            Draw(group.sprites.at(i));
+        }
+        
+    }
+
     void Window::Draw(Sprite& sprite)
     {
         sprite.Bind();
@@ -67,6 +77,7 @@ namespace Unicell {
             sprite.texture->Bind();
         sprite.shader->setMatrix4("u_projection",projection);
         sprite.shader->setMatrix4("u_model",sprite.getModelView());
+        sprite.shader->setMatrix4("u_view",camera->getViewMatrix());
         glDrawArrays(GL_TRIANGLES,0,sprite.getVertexCount());
         if(sprite.hasTexture)
             sprite.texture->Unbind();
@@ -80,13 +91,14 @@ namespace Unicell {
         rect.shader->enable();
         rect.shader->setMatrix4("u_projection",projection);
         rect.shader->setMatrix4("u_model",rect.getModelView());
+        rect.shader->setMatrix4("u_view",camera->getViewMatrix());
+        rect.shader->setVector4("fill",rect.getFillColor());
         glDrawArrays(GL_TRIANGLES,0,rect.getVertexCount());
         rect.Unbind();
     }
     
     void Window::Update(){
         glfwPollEvents();
-        glfwGetFramebufferSize(window,&window_width,&window_height);
         glViewport(0,0,window_width,window_height);
         glfwSwapBuffers(window);
     }
